@@ -71,7 +71,7 @@ $ npx ts-node-esm ./src/app.ts
 
 ```
 
-> fefs
+> refs
 
 https://typestrong.org/ts-node/docs/imports/
 
