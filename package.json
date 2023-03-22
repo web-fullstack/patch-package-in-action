@@ -9,6 +9,7 @@
     "app-esm": "npx ts-node-esm ./src/app.ts",
     "dev": "npx ts-node ./src/index.ts",
     "app": "npx ts-node ./src/app.ts",
+    "clear": "rimraf ./node_modules",
     "rmrf": "rimraf ./patchs",
     "postinstall": "patch-package",
     "patch-lodash": "npx patch-package lodash",
