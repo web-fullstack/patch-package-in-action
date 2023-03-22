@@ -9,6 +9,11 @@
     "app-esm": "npx ts-node-esm ./src/app.ts",
     "dev": "npx ts-node ./src/index.ts",
     "app": "npx ts-node ./src/app.ts",
+    "rmrf": "rimraf ./patchs",
+    "postinstall": "patch-package",
+    "patch-lodash": "npx patch-package lodash",
+    "patch-lodash-es": "npx patch-package lodash-es",
+    "patch-all": "npx patch-package lodash && npx patch-package lodash-es",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,6 +36,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
+    "patch-package": "^6.5.1",
     "typescript": "^5.0.2"
   },
   "devDependencies": {

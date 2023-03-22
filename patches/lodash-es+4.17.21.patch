@@ -1,0 +1,18 @@
+diff --git a/node_modules/lodash-es/toString.js b/node_modules/lodash-es/toString.js
+index ecf9e50..81b707f 100644
+--- a/node_modules/lodash-es/toString.js
++++ b/node_modules/lodash-es/toString.js
+@@ -22,7 +22,12 @@ import baseToString from './_baseToString.js';
+  * // => '1,2,3'
+  */
+ function toString(value) {
+-  return value == null ? '' : baseToString(value);
++  // return value == null ? '' : baseToString(value);
++  // patch-package ✅
++  // 实现原理: git diff, copy & recover
++  const str = (value == null) ? '' : baseToString(value);
++  console.log(`patch-package 🚀 str =`, str);
++  return str;
+ }
+ 
+ export default toString;

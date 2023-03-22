@@ -1,0 +1,40 @@
+diff --git a/node_modules/lodash/.DS_Store b/node_modules/lodash/.DS_Store
+new file mode 100644
+index 0000000..d2829a3
+Binary files /dev/null and b/node_modules/lodash/.DS_Store differ
+diff --git a/node_modules/lodash/lodash.js b/node_modules/lodash/lodash.js
+index 4131e93..df4e614 100644
+--- a/node_modules/lodash/lodash.js
++++ b/node_modules/lodash/lodash.js
+@@ -12623,7 +12623,12 @@
+      * // => '1,2,3'
+      */
+     function toString(value) {
+-      return value == null ? '' : baseToString(value);
++      // return value == null ? '' : baseToString(value);
++      // patch-package ✅
++      // 实现原理: git diff, copy & recover
++      const str = (value == null) ? '' : baseToString(value);
++      console.log(`patch-package 👻 str =`, str);
++      return str;
+     }
+ 
+     /*------------------------------------------------------------------------*/
+diff --git a/node_modules/lodash/toString.js b/node_modules/lodash/toString.js
+index daaf681..bae0215 100644
+--- a/node_modules/lodash/toString.js
++++ b/node_modules/lodash/toString.js
+@@ -22,7 +22,12 @@ var baseToString = require('./_baseToString');
+  * // => '1,2,3'
+  */
+ function toString(value) {
+-  return value == null ? '' : baseToString(value);
++  // return value == null ? '' : baseToString(value);
++  // patch-package ✅
++  // 实现原理: git diff, copy & recover
++  const str = (value == null) ? '' : baseToString(value);
++  console.log(`patch-package 👻 str =`, str);
++  return str;
+ }
+ 
+ module.exports = toString;

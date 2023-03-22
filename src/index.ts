@@ -1,9 +1,12 @@
 
 import _ from "lodash";
-// import _, {toString} from "lodash";
-
 const { toString } = _;
+// patch bug: build cjs 没有变化
 
+// import toString from "lodash/toString";
+// import * as toString from "lodash/toString";
+
+// import _, {toString} from "lodash";
 /*
 
 SyntaxError: Named export 'toString' not found.
@@ -60,6 +63,7 @@ const obj: Obj = {
 
 const str1 = _.toString(obj);
 const str2 = toString(obj);
+// const str2 = toString.default(obj);
 
 console.log(`_.toString =`, str1);
 console.log(`toString =`, str2);

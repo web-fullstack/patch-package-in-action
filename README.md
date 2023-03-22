@@ -1,6 +1,14 @@
 # patch-package in action
 
 ```sh
+# npm
+$ npm i -S patch-package
+
+# yarn v1
+$ yarn add patch-package postinstall-postinstall
+```
+
+```sh
 $ npm i -S typescript lodash
 $ npm i -D ts-node rimraf
 $ npm i -D app-node-env
