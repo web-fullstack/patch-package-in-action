@@ -1,0 +1,42 @@
+{
+  "name": "patch-package-in-action",
+  "version": "1.0.0",
+  "description": "patch-package in action",
+  "main": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "esm": "npx ts-node-esm ./src/index.ts",
+    "dev": "npx ts-node ./src/index.ts",
+    "app": "npx ts-node ./src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-fullstack/patch-package-in-action.git"
+  },
+  "keywords": [
+    "patch-package",
+    "node_modules",
+    "npm",
+    "Node.js",
+    "patch"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-fullstack/patch-package-in-action/issues"
+  },
+  "homepage": "https://github.com/web-fullstack/patch-package-in-action#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/lodash-es": "^4.17.7",
+    "app-node-env": "^1.4.7",
+    "rimraf": "^4.4.0",
+    "ts-node": "^10.9.1"
+  }
+}
