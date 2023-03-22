@@ -1,3 +1,3 @@
 // default
 const NODE_ENV = 'dev';
-module.exports = NODE_ENV;
+export default NODE_ENV;

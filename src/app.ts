@@ -1,7 +1,7 @@
 
 import {toString as ToString} from "lodash-es";
 
-import toString from "lodash-es/toString";
+// import toString from "lodash-es/toString";
 
 
 type Obj = {
@@ -15,9 +15,9 @@ const obj: Obj = {
 };
 
 const str1 = ToString(obj);
-const str2 = toString(obj);
+// const str2 = toString(obj);
 
-console.log(`ToString =`, str1);
-console.log(`toString =`, str2);
+console.log(`ToString =`, JSON.stringify(str1));
+// console.log(`toString =`, str2);
 
 export {}

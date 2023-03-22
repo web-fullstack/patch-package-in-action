@@ -1,6 +1,20 @@
 
 import _ from "lodash";
 // import _, {toString} from "lodash";
+
+const { toString } = _;
+
+/*
+
+SyntaxError: Named export 'toString' not found.
+The requested module 'lodash' is a CommonJS module, which may not support all module.exports as named exports.
+CommonJS modules can always be imported via the default export, for example using:
+
+import pkg from 'lodash';
+const { toString } = pkg;
+
+*/
+
 /*
 
 (node:19404) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
@@ -14,7 +28,7 @@ SyntaxError: Cannot use import statement outside a module
 */
 
 // ✅
-import toString from "lodash/toString";
+// import toString from "lodash/toString";
 
 // import toString from "lodash/tostring";
 // const toString = require("lodash/toString");

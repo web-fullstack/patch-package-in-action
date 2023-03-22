@@ -5,7 +5,8 @@
   "main": "./src/index.ts",
   "type": "module",
   "scripts": {
-    "esm": "npx ts-node-esm ./src/index.ts",
+    "dev-esm": "npx ts-node-esm ./src/index.ts",
+    "app-esm": "npx ts-node-esm ./src/app.ts",
     "dev": "npx ts-node ./src/index.ts",
     "app": "npx ts-node ./src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"

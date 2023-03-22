@@ -46,11 +46,30 @@ $ npx tsc --init
 ## dev
 
 ```sh
+# cjs
 $ yarn dev
-# $ yarn esm
 $ yarn app
 
 $ npx ts-node ./src/index.ts
 $ npx ts-node ./src/app.ts
 
+
+# esm
+$ yarn dev-esm
+$ yarn app-esm
+
+$ npx ts-node-esm ./src/index.ts
+$ npx ts-node-esm ./src/app.ts
+
 ```
+
+> fefs
+
+https://typestrong.org/ts-node/docs/imports/
+
+https://github.com/TypeStrong/ts-node/issues/1062#issuecomment-1094296803
+
+https://github.com/xgqfrms/one-line-awesome-js-code/issues/1
+
+https://www.cnblogs.com/xgqfrms/p/17242430.html#5160592
+
