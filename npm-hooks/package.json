@@ -1,0 +1,24 @@
+{
+  "name": "npm-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "./scripts/preinstall.sh",
+    "install": "./scripts/install.sh",
+    "postinstall": "./scripts/postinstall.sh",
+    "prepublish": "./scripts/prepublish.sh",
+    "preprepare": "./scripts/preprepare.sh",
+    "prepare": "./scripts/prepare.sh",
+    "postprepare": "./scripts/postprepare.sh",
+    "clear": "rimraf ./node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "app-node-env": "^1.4.7",
+    "rimraf": "^4.4.0"
+  }
+}
